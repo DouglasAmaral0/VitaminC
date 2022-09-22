@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "vitaminc:block/stripped_orange_wood_top",
+    "side": "vitaminc:block/stripped_orange_wood"
+  }
+}

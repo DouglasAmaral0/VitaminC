@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#X#",
+    "X$X",
+    "#X#"
+  ],
+  "key": {
+    "#": {
+      "tag": "vitamintags:aloevera"
+    },
+    "$": {
+      "item": "vitaminc:aloevera_gel"
+    },
+    "X": {
+      "item": "minecraft:slime_ball"
+    }
+  },
+  "result": {
+    "count": 1,
+    "item": "vitaminc:slimy_aloe"
+    }
+  }

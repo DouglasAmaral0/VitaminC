@@ -1,0 +1,10 @@
+{
+  "variants":  {
+      "lit=true": {
+        "model": "vitaminc:block/orange_lamp_on"
+      },
+      "lit=false": {
+        "model": "vitaminc:block/orange_lamp_off"
+      }
+  }
+}

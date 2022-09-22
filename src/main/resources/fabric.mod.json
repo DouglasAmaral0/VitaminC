@@ -1,16 +1,17 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "vitaminc",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Vitamin C",
+  "description": "VitaminC is a mod about survival. Add several of effects and items on game",
+
   "authors": [
-    "Me!"
+    "Douglas Amaral"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "I will change that",
+    "sources": "I Will Change that Either"
   },
 
   "license": "CC0-1.0",
@@ -19,11 +20,14 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.skydragon.vitaminc.VitaminC"
+    ],
+    "client": [
+      "net.skydragon.vitaminc.VitamincClientMod"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "vitaminc.mixins.json"
   ],
 
   "depends": {

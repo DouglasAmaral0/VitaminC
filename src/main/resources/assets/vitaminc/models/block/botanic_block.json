@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "vitaminc:block/orange_planks",
+    "side": "vitaminc:block/botanic_table_side"
+  }
+}
