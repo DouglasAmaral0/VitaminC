@@ -27,7 +27,7 @@ public abstract class ModEntityDataSaver implements IEntityDataSaver {
 	@Inject(method = "writeNbt", at = @At("HEAD"))
 	protected void injectWriteMethod(NbtCompound nbt, CallbackInfoReturnable info) {
 		if(persistentData != null) {
-			nbt.put("tutorialmod.kaupen_data", persistentData);
+			nbt.put("vitaminc.skydragonx_data", persistentData);
 		}
 	}
 
