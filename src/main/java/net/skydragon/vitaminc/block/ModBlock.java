@@ -10,10 +10,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.skydragon.vitaminc.Item.ModItemGroup;
 import net.skydragon.vitaminc.VitaminC;
-import net.skydragon.vitaminc.block.custom.AloeVeraBlock;
-import net.skydragon.vitaminc.block.custom.BotanicBlock;
-import net.skydragon.vitaminc.block.custom.ModSaplingBlock;
-import net.skydragon.vitaminc.block.custom.OrangeLamp;
+import net.skydragon.vitaminc.block.custom.*;
 import net.skydragon.vitaminc.world.feature.tree.OrangeSaplingGenerator;
 
 public class ModBlock {
@@ -35,7 +32,7 @@ public class ModBlock {
             new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(3f).requiresTool()), ModItemGroup.VITAMINC);
 
     public static final Block ORANGE_LEAVES = registerBlock("orange_leaves",
-            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).nonOpaque()), ModItemGroup.VITAMINC);
+            new OrangeLeaves(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).nonOpaque()), ModItemGroup.VITAMINC);
 
     public static final Block BOTANIC_BLOCK = registerBlock("botanic_block",
             new BotanicBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(2f)), ModItemGroup.VITAMINC);
@@ -62,6 +59,6 @@ public class ModBlock {
     }
     public static void registerModItems(){
 
-        VitaminC.LOGGER.info("Registro dos Items do Mod" + VitaminC.MOD_ID);
+        VitaminC.LOGGER.info("Block Mod Register" + VitaminC.MOD_ID);
     }
 }

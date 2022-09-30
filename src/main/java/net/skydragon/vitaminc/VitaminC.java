@@ -22,12 +22,12 @@ public class VitaminC implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModBlock.registerModItems();
-		ModConfiguredFeatures.registerConfiguredFeatures();
 		ModEffects.registerEffects();
 		ModItems.registerModItems();
 		ModPaintings.registerPaintings();
 		ModRegistries.registerMod();
 		ModWorldGen.generateModWorldGen();
+		ModConfiguredFeatures.registerConfiguredFeatures();
 		ModVillagers.registerVillagers();
 		ModVillagers.registerTrades();
 		VitaminST.registerStructureFeatures();

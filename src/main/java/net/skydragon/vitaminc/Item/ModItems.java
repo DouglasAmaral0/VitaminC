@@ -1,15 +1,14 @@
 package net.skydragon.vitaminc.Item;
+import com.github.crimsondawn45.fabricshieldlib.lib.object.FabricBannerShieldItem;
+import com.github.crimsondawn45.fabricshieldlib.lib.object.FabricShieldItem;
 import net.minecraft.entity.EquipmentSlot;
-import net.minecraft.item.AliasedBlockItem;
-import net.minecraft.item.ArmorItem;
-import net.minecraft.item.ToolMaterials;
+import net.minecraft.item.*;
 import net.skydragon.vitaminc.Item.custom.AloeVera_Gel;
 import net.skydragon.vitaminc.Item.custom.OrangeJuice;
 import net.skydragon.vitaminc.Item.custom.OrangePackageItem;
 import net.skydragon.vitaminc.Item.custom.OrangeSword;
 import net.skydragon.vitaminc.VitaminC;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.skydragon.vitaminc.block.ModBlock;
@@ -41,6 +40,8 @@ public class ModItems extends Item {
 
     public static final Item ALOEVERA_NETHERITE_CHEST = registerItem("aloevera_netherite_chest", new ArmorItem(ModArmorMaterials.IRON,
             EquipmentSlot.CHEST, new FabricItemSettings().group(ModItemGroup.VITAMINC)));*/
+
+    public static final Item LEMON_SHIELD = registerItem("lemon_shield", new FabricBannerShieldItem(new FabricItemSettings().maxDamage(1250).group(ModItemGroup.VITAMINC), 10, 10, ModItems.ORANGE)); // FabricShieldItem(settings.maxDamage(durability), cooldownTicks, enchantability, repairItem)
 
 
     public ModItems(Settings settings) {

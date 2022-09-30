@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "vitamintags:orange_logs"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "vitaminc:orange_planks"
+  }
+}

@@ -1,6 +1,7 @@
 package net.skydragon.vitaminc.world.feature;
 
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.util.registry.RegistryEntry;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
@@ -12,15 +13,20 @@ import net.skydragon.vitaminc.block.ModBlock;
 
 import java.util.List;
 
+
 public class ModConfiguredFeatures {
 
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> ORANGE_TREE =
             ConfiguredFeatures.register("orange_tree", Feature.TREE, new TreeFeatureConfig.Builder(
                     BlockStateProvider.of(ModBlock.ORANGE_LOG),
-                    new StraightTrunkPlacer(3, 4, 3),
+                    new StraightTrunkPlacer(2, 3, 2),
                     BlockStateProvider.of(ModBlock.ORANGE_LEAVES),
-                    new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 4),
-                    new TwoLayersFeatureSize(1, 0, 2)).build());
+                    new BlobFoliagePlacer(
+                            ConstantIntProvider.create(3),
+                            ConstantIntProvider.create(3),
+                            3
+                    ),
+                    new TwoLayersFeatureSize(1, 0, 1)).build());
 
     public static final RegistryEntry<PlacedFeature> ORANGE_CHECKED =
             PlacedFeatures.register("orange_checked", ORANGE_TREE,
